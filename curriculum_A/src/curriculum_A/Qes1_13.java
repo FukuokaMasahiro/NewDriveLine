@@ -37,13 +37,13 @@ public class Qes1_13 {
 		// 短整数型変数の初期化
 		intKadai = 0;
 		// 整数型変数の初期化
-		longKadai = 0;
+		longKadai = 0L;
 		// 長整数型変数の初期化
 		floatKadai = 0.f;
 		// 単精度浮動小数点数型変数の初期化
-		doubleKadai = 0.0;
+		doubleKadai = 0.0d;
 		// 倍精度浮動小数点数型変数の初期化
-		charKadai = 0;
+		charKadai = '\0';
 		// 文字型変数の初期化
 		stringKadai = null;
 		// 文字列型変数の初期化
@@ -61,11 +61,11 @@ public class Qes1_13 {
 		// 短整数型変数に代入
 		intKadai = 1000;
 		// 整数型変数に代入
-		longKadai = 10000;
+		longKadai = 10000L;
 		// 長整数型変数に代入
 		floatKadai = 9.5f;
 		// 単精度浮動小数点数型変数に代入
-		doubleKadai = 10.5;
+		doubleKadai = 10.5d;
 		// 倍精度浮動小数点数型変数に代入
 		charKadai = 'a';
 		// 文字型変数に代入
@@ -81,7 +81,7 @@ public class Qes1_13 {
 		 */
 		System.out.println(byteKadai + shortKadai + intKadai + longKadai);
 		// 11110が出力されるように出力する
-		System.out.println(byteKadai * 2);
+		System.out.println(byteKadai + byteKadai);
 		// 20が出力されるように出力する
 		System.out.println(charKadai + stringKadai + booleanKadai);
 		// a ハロー trueが出力されるように出力する
@@ -209,6 +209,12 @@ public class Qes1_13 {
 		 * 問題８で宣言した年齢が25歳以上の時にtrueを出力するようにする
 		 * if分は使わない
 		 */
+		age = 24;
+		// 問８の値を整数型変数に年齢を再代入
+		height = 168.5;
+		// 問８の値を小数点型変数に身長を再代入
+		weight = 64.2;
+		// 問８の値を小数点型変数に体重を再代入
 		boolean ageCompare = age >= 25;
 		// 変数ageの値が25以上かどうかを比較判断する
 		System.out.println(ageCompare);
